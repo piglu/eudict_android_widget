@@ -1,0 +1,92 @@
+﻿Build1=Default,com.eudict,full,noads
+File1=arrow.png
+File10=promjeni.png
+File11=settings.png
+File12=stavka_zadnjih_10.bal
+File13=tekst.txt
+File14=zadnji.png
+File2=dlg_trazi.bal
+File3=dlg_zadnjih_10.bal
+File4=eudict.bal
+File5=form.png
+File6=ic_info_outline_white_24dp.png
+File7=ic_search_white_24dp.png
+File8=link.png
+File9=postavke.bal
+FileGroup1=Default Group
+FileGroup10=Default Group
+FileGroup11=Default Group
+FileGroup12=Default Group
+FileGroup13=Default Group
+FileGroup14=Default Group
+FileGroup2=Default Group
+FileGroup3=Default Group
+FileGroup4=Default Group
+FileGroup5=Default Group
+FileGroup6=Default Group
+FileGroup7=Default Group
+FileGroup8=Default Group
+FileGroup9=Default Group
+Group=Default Group
+IconFile=
+Library1=core
+Library2=dialogs
+Library3=viewsex
+Library4=okhttputils2
+Library5=xui
+Library6=runtimepermissions
+Library7=phone
+Library8=jsoup
+Library9=stringutils
+ManifestCode='This code will be applied to the manifest file during compilation.~\n~'You do not need to modify it in most cases.~\n~'See this link for for more information: https://www.b4x.com/forum/showthread.php?p=78136~\n~AddManifestText(~\n~<uses-sdk android:minSdkVersion="5" android:targetSdkVersion="26"/>~\n~<supports-screens android:largeScreens="true" ~\n~    android:normalScreens="true" ~\n~    android:smallScreens="true" ~\n~    android:anyDensity="true"/>)~\n~SetApplicationAttribute(android:icon, "@drawable/icon")~\n~SetApplicationAttribute(android:label, "$LABEL$")~\n~CreateResourceFromFile(Macro, Themes.DarkTheme)~\n~'End of default text.~\n~' za starije verzije androida (API 18 na dole)~\n~AddManifestText(~\n~<uses-permission~\n~  android:name="android.permission.WRITE_EXTERNAL_STORAGE"~\n~  android:maxSdkVersion="18" />~\n~)~\n~AddReplacement(<category android:name="android.intent.category.LAUNCHER" />, <!--<category android:name="android.intent.category.LAUNCHER" /> -->)
+Module1=Starter
+Module2=eudict_servis
+Module3=postavke
+Module4=dlgTrazi
+Module5=zadnji
+Module6=CustomListView
+NumberOfFiles=14
+NumberOfLibraries=9
+NumberOfModules=6
+Version=8.3
+@EndOfDesignText@
+#Region  Project Attributes 
+	#ApplicationLabel: Riječnici
+	#VersionCode: 1
+	#VersionName: 1.0
+	'SupportedOrientations possible values: unspecified, landscape or portrait.
+	#SupportedOrientations: unspecified
+	#CanInstallToExternalStorage: False
+#End Region
+
+#Region  Activity Attributes 
+	#FullScreen: False
+	#IncludeTitle: True
+#End Region
+
+#AdditionalJar: com.android.support:support-compat
+
+Sub Process_Globals
+	'These global variables will be declared once when the application starts.
+	'These variables can be accessed from all modules.
+
+End Sub
+
+Sub Globals
+	'These global variables will be redeclared each time the activity is created.
+	'These variables can only be accessed from this module.
+End Sub
+
+Sub Activity_Create(FirstTime As Boolean)
+	'Do not forget to load the layout file created with the visual designer. For example:
+	'Activity.LoadLayout("Layout1")
+	Activity.Finish
+End Sub
+
+Sub Activity_Resume
+
+End Sub
+
+Sub Activity_Pause (UserClosed As Boolean)
+
+End Sub
